@@ -1,0 +1,5 @@
+pip install flasgger
+pip install Flask
+pip install transformers
+pip install simplet5
+pip install torch
