@@ -19,6 +19,7 @@ def predict_disease():
         values = request.get_json()
         medical_text=values["medical_text"]
         model = SimpleT5()
+        last_epoch_model=""
         for file in glob("./outputs/*"):
             if 'epoch-1' in file:
                 last_epoch_model = file
